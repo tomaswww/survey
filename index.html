@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Survey</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title></title>
   </head>
   <body>
@@ -12,24 +13,42 @@
 <img src="images/shiphero-logo-primary.png" alt="logo">
 </header>
 <main>
-<div class="satisfaction">
+  <!-- the whole survey questions are inside a form-->
+  <form class="formToBeFilled" action="" method="get">
+    <div class="satisfaction">
+      <label for="experience">How would you rate your experience so far using Shiphero?</label>
+          <input type="radio" id="expSelect1"
+           name="expSelect" value="bad">
+          <label for="expSelect1">Bad</label>
 
-</div>
-<div class="recomendations">
+          <input type="radio" id="expSelect2"
+           name="expSelect" value="notThatGood">
+          <label for="expSelect2">Not that good</label>
 
-</div>
-<div class="usability">
+          <input type="radio" id="expSelect3"
+           name="expSelect" value="good">
+          <label for="expSelect3">Good!</label>
 
-</div>
-<div class="ratings">
+          <input type="radio" id="expSelect4"
+           name="expSelect" value="good">
+          <label for="expSelect4">Excellent</label>
+        </div>
+    <div class="recomendations">
 
-</div>
-<div class="userTasks">
+    </div>
+    <div class="usability">
 
-</div>
-<div class="productDescription">
+    </div>
+    <div class="ratings">
 
-</div>
+    </div>
+    <div class="userTasks">
+
+    </div>
+    <div class="productDescription">
+
+    </div>
+  </form>
 
 </main>
 <footer>
