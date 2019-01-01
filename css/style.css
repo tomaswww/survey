@@ -1,9 +1,19 @@
-header, footer {
-  background-color: #69afea;
-}
-
-.formToBeFilled {
+body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
+    }
+
+header {
+  text-align: left;
+}
+
+header, footer {
+  background-color: #69afea;
+  }
+
+
+.formToBeFilled {
+  line-height: 9vw;
 }
