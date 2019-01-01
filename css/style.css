@@ -3,7 +3,8 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
-    }
+  font-family: 'Roboto', sans-serif;
+}
 
 header {
   text-align: left;
@@ -11,9 +12,15 @@ header {
 
 header, footer {
   background-color: #69afea;
-  }
-
+}
 
 .formToBeFilled {
   line-height: 9vw;
+}
+
+#explSatisf, #explRec {
+  height: 120px;
+  width: 450px;
+  border-radius: 0.5em;
+  border-style: ridge;
 }
