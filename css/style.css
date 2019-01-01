@@ -20,7 +20,7 @@ header, footer {
 
 #explSatisf, #explRec {
   height: 120px;
-  width: 450px;
+  width: 80%;
   border-radius: 0.5em;
   border-style: ridge;
 }
