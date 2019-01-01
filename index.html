@@ -18,7 +18,7 @@
     <!-- the whole survey questions are inside a form-->
     <form class="formToBeFilled" action="" method="get">
       <div class="satisfaction">
-        <label for="experience">How would you rate your experience so far using Shiphero?</label>
+        <label for="experience">How would you rate your experience so far using Shiphero?</label><br>
         <input type="radio" id="expSelect1" name="expSelect" value="bad">
         <label for="expSelect1">Bad</label>
         <input type="radio" id="expSelect2" name="expSelect" value="notThatGood">
@@ -26,14 +26,14 @@
         <input type="radio" id="expSelect3" name="expSelect" value="good">
         <label for="expSelect3">Good!</label>
         <input type="radio" id="expSelect4" name="expSelect" value="excellent">
-        <label for="expSelect4">Excellent</label>
+        <label for="expSelect4">Excellent</label><br>
 
-        <label for="explSatisf">Can you explain the reasons behind your level of satisfaction?:</label>
+        <label for="explSatisf">Can you explain the reasons behind your level of satisfaction?:</label><br>
         <input type="text" id="explSatisf" name="explSatisf" required minlength="4" maxlength="500" size="10">
 
       </div>
       <div class="recomendations">
-        <label for="experience">How likely is it that you would recommend Shiphero to a friend or colleague?</label>
+        <label for="experience">How likely is it that you would recommend Shiphero to a friend or colleague?</label><br>
         <input type="radio" id="recSelect1" name="recSelect" value="Extremely unlikely">
         <label for="recSelect1">Extremely unlikely</label>
         <input type="radio" id="recSelect2" name="recSelect" value="Quite unlikely">
@@ -43,28 +43,40 @@
         <input type="radio" id="recSelect4" name="recSelect" value="Quite likely">
         <label for="expSelect4">Quite likely</label>
         <input type="radio" id="recSelect5" name="recSelect" value="Extremely likely">
-        <label for="expSelect5">Extremely likely</label>
+        <label for="expSelect5">Extremely likely</label><br>
 
-        <label for="experience">Have you recommended Shiphero to someone whitin the last 12 months?</label>
+        <label for="experience">Have you recommended Shiphero to someone whitin the last 12 months?</label><br>
         <input type="radio" id="recSelectTime" name="recSelectTime" value="Yes">
         <label for="expSelectTime">Yes</label>
         <input type="radio" id="recSelectTime" name="recSelectTime" value="No">
-        <label for="expSelectTime">No</label>
+        <label for="expSelectTime">No</label><br>
 
-        <label for="explRec">Who did you recommend Shiphero to, and why?:</label>
+        <label for="explRec">Who did you recommend Shiphero to, and why?:</label><br>
         <input type="text" id="explRec" name="explRec" minlength="4" maxlength="500" size="10">
       </div>
-      <div class="usability">
 
+      <div class="usability">
+<!-- best way is to use a matrix ..got to research this a bit more -->
       </div>
       <div class="ratings">
-
+<!-- star rating for this one -->
       </div>
       <div class="userTasks">
-
+<!-- define tasks to be rated -->
+<label for="experience">Overall, how did you find TASK1?</label><br>
+<input type="radio" id="taskSelect1" name="taskSelect" value="Very Difficult">
+<label for="taskSelect1">Very Difficult</label>
+<input type="radio" id="taskSelect2" name="taskSelect" value="Difficult">
+<label for="taskSelect2">Difficult</label>
+<input type="radio" id="taskSelect3" name="taskSelect" value="Not easy neither difficult">
+<label for="taskSelect3">Not easy neither difficult</label>
+<input type="radio" id="taskSelect4" name="taskSelect" value="Easy">
+<label for="taskSelect4">Easy</label>
+<input type="radio" id="taskSelect5" name="taskSelect" value="Very Easy">
+<label for="taskSelect5">Very Easy</label><br>
       </div>
       <div class="productDescription">
-
+<!-- Set a product reaction card -->
       </div>
     </form>
 
