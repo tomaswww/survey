@@ -1,3 +1,9 @@
 header, footer {
   background-color: #69afea;
 }
+
+.formToBeFilled {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
