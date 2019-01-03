@@ -29,29 +29,25 @@ header, footer {
 a {
   text-decoration: none;
   display: inline-block;
-  padding: 8px 16px;
-}
+  border-radius: 1em;
+  width: 25%;
+  margin-top: 2%;
+  }
 
 a:hover {
-  background-color: #ddd;
+  background-color: #69afea;
   color: black;
 }
 
 .previous {
-  background-color: #f1f1f1;
+  background-color: #4caf506b;
   color: black;
 }
 
 .next {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #4caf506b;
+  color: black;
 }
-
-.round {
-  border-radius: 50%;
-}
-
-
 
 .formToBeFilled {
   line-height: 9vw;
@@ -59,8 +55,8 @@ a:hover {
 
 .recomendations, .satisfaction, .experience, .usability, .ratings, .userTasks, .productDescription {
   background-color: #4caf5014;
-  padding: 20%;
-  height: 80vw;
+  padding: 10%;
+  height: 90vw;
   /* display:none; */
 }
 
