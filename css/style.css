@@ -8,14 +8,31 @@ body {
 
 header {
   text-align: left;
+  align-items: center;
+  display: flex;
+}
+
+img {
+  align-items: baseline;
+  height:80%;
+  padding-left: 2%;
 }
 
 header, footer {
   background-color: #69afea;
+  height:10vw;
 }
 
 .formToBeFilled {
   line-height: 9vw;
+}
+
+.recomendations, .satisfaction, .experience, .usability, .ratings, .userTasks, .productDescription {
+  border-radius: 0.5em;
+  border-style: ridge;
+  background-color: #4caf5014;
+  padding: 20%;
+  height: 80vw;
 }
 
 #explSatisf, #explRec {
