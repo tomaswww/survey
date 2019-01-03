@@ -3,6 +3,8 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
+  width:100%;
+  margin:0%;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -28,11 +30,10 @@ header, footer {
 }
 
 .recomendations, .satisfaction, .experience, .usability, .ratings, .userTasks, .productDescription {
-  border-radius: 0.5em;
-  border-style: ridge;
   background-color: #4caf5014;
   padding: 20%;
   height: 80vw;
+  display:none;
 }
 
 #explSatisf, #explRec {
