@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+  <header>
+    <img src="images/shiphero-logo-primary.png" alt="logo">
+  </header>
+  <main>
+    <!-- the whole survey questions are inside a form-->
+    <form class="formToBeFilled" action="" method="get">
+      <div class="satisfaction">
+        <label for="experience">How would you rate your experience so far using Shiphero?</label><br>
+        <input type="radio" id="expSelect1" name="expSelect" value="bad">
+        <label for="expSelect1">Bad</label>
+        <input type="radio" id="expSelect2" name="expSelect" value="notThatGood">
+        <label for="expSelect2">Not that good</label>
+        <input type="radio" id="expSelect3" name="expSelect" value="good">
+        <label for="expSelect3">Good!</label>
+        <input type="radio" id="expSelect4" name="expSelect" value="excellent">
+        <label for="expSelect4">Excellent</label><br>
+
+        <label for="explSatisf">Can you explain the reasons behind your level of satisfaction?:</label><br>
+        <input type="text" id="explSatisf" name="explSatisf" required minlength="4" maxlength="500" size="10">
+
+        <a href="question2.html" class="next">Next &raquo;</a>
+
+      </div>
+          </form>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>

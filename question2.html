@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+  <header>
+    <img src="images/shiphero-logo-primary.png" alt="logo">
+  </header>
+  <main>
+    <!-- the whole survey questions are inside a form-->
+    <form class="formToBeFilled" action="" method="get">
+      <div class="recomendations">
+        <label for="experience">How likely is it that you would recommend Shiphero to a friend or colleague?</label><br>
+        <input type="radio" id="recSelect1" name="recSelect" value="Extremely unlikely">
+        <label for="recSelect1">Extremely unlikely</label>
+        <input type="radio" id="recSelect2" name="recSelect" value="Quite unlikely">
+        <label for="expSelect2">Quite unlikely</label>
+        <input type="radio" id="recSelect3" name="expSelect" value="Neither unlelikely nor likely">
+        <label for="recSelect3">Neither unlelikely nor likely</label>
+        <input type="radio" id="recSelect4" name="recSelect" value="Quite likely">
+        <label for="expSelect4">Quite likely</label>
+        <input type="radio" id="recSelect5" name="recSelect" value="Extremely likely">
+        <label for="expSelect5">Extremely likely</label><br>
+
+        <label for="experience">Have you recommended Shiphero to someone whitin the last 12 months?</label><br>
+        <input type="radio" id="recSelectTime" name="recSelectTime" value="Yes">
+        <label for="expSelectTime">Yes</label>
+        <input type="radio" id="recSelectTime" name="recSelectTime" value="No">
+        <label for="expSelectTime">No</label><br>
+
+        <label for="explRec">Who did you recommend Shiphero to, and why?:</label><br>
+        <input type="text" id="explRec" name="explRec" minlength="4" maxlength="500" size="10">
+
+        <a href="question1.html" class="previous">&laquo; Previous</a>
+        <a href="question3.html" class="next">Next &raquo;</a>
+      </div>
+    </form>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
