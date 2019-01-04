@@ -3,8 +3,8 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
-  width:100%;
-  margin:0%;
+  width: 100%;
+  margin: 0%;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -16,13 +16,13 @@ header {
 
 img {
   align-items: baseline;
-  height:80%;
+  height: 80%;
   padding-left: 2%;
 }
 
 header, footer {
   background-color: #69afea36;
-  height:10vw;
+  height: 10vw;
 }
 
 /* next and previous buttons */
@@ -32,7 +32,7 @@ a {
   border-radius: 1em;
   width: 20%;
   margin-top: 2%;
-  }
+}
 
 a:hover {
   background-color: #69afea;
@@ -63,9 +63,9 @@ a:hover {
 #questionCounter {
   display: flex;
   text-align: left;
-  height:5vw;
+  height: 5vw;
   margin: 0%;
-  }
+}
 
 #explSatisf, #explRec {
   height: 120px;
@@ -76,11 +76,24 @@ a:hover {
 
 /* stars */
 #stars {
-  width:100%;
+  width: 100%;
   font-size: 5vw;
-  margin:0%;
+  margin: 0%;
 }
 
 .checked {
   color: orange;
+}
+
+/* table  */
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px black;
+}
+
+td, th {
+  line-height: 5vw;
+  border: solid 1px black;
 }
