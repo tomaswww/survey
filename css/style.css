@@ -21,7 +21,7 @@ img {
 }
 
 header, footer {
-  background-color: #69afea;
+  background-color: #69afea36;
   height:10vw;
 }
 
@@ -30,7 +30,7 @@ a {
   text-decoration: none;
   display: inline-block;
   border-radius: 1em;
-  width: 25%;
+  width: 20%;
   margin-top: 2%;
   }
 
