@@ -73,3 +73,14 @@ a:hover {
   border-radius: 0.5em;
   border-style: ridge;
 }
+
+/* stars */
+#stars {
+  width:100%;
+  font-size: 5vw;
+  margin:0%;
+}
+
+.checked {
+  color: orange;
+}
