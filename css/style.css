@@ -12,12 +12,15 @@ header {
   text-align: left;
   align-items: center;
   display: flex;
+  max-height: 100px;
 }
 
 img {
   align-items: baseline;
   height: 80%;
   padding-left: 2%;
+  max-width: 260px;
+  max-height: 72px;
 }
 
 header, footer {
