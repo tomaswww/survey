@@ -94,6 +94,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   border: 3px black;
+  font-size: 1vw;
 }
 
 td, th {
