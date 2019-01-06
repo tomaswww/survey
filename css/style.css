@@ -35,6 +35,7 @@ a {
   border-radius: 1em;
   width: 20%;
   margin-top: 2%;
+  height: 10%;
 }
 
 a:hover {
@@ -95,6 +96,8 @@ table {
   border-collapse: collapse;
   border: 3px black;
   font-size: 1vw;
+  background-color: #dbf2fd;
+  text-align: left;
 }
 
 td, th {
