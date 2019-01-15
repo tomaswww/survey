@@ -98,6 +98,7 @@ table {
   font-size: 1vw;
   background-color: #dbf2fd;
   text-align: left;
+  box-shadow: 2px 4px 2px #888888;
 }
 
 td, th {
