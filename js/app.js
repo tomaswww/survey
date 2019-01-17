@@ -26,7 +26,7 @@
 
 // own thought
 
-// 
+//
 // // star creation
 // function punctuateApp() {
 //   for (let i = 0; i < 5; i++) {
@@ -62,30 +62,29 @@
 
 
 // question6 creating the table for checkboxes
-var adjectivesArray = ["Boring", "Busy", "Calm", "Cheap",
-  "Creative", "Cutting-edge", "Exciting", "Expensive",
-  "Familiar", "Fresh", "Impressive", "Innovative",
-  "Inspiring", "Intimidating", "Old", "Professional",
-  "Trustworthy", "Unprofessional", "Empowering",
-  "Approachable", "Disconnected", "Friendly",
-  "Irrelevant", "Patronizing", "Stable"
-];
+var adjectivesArray = ["Boring","Busy","Calm","Cheap",
+"Creative","Cutting-edge","Exciting","Expensive",
+"Familiar","Fresh","Impressive","Innovative",
+"Inspiring", "Intimidating","Old","Professional",
+"Trustworthy","Unprofessional","Empowering",
+"Approachable","Disconnected","Friendly",
+"Irrelevant","Patronizing","Stable"];
 
 
-function createTable() {
+function createTable(adjectivesArray) {
   var lineLenght;
   // set the line lenght for table
-  if (adjectivesArray.lenght % 5 === 0) {
-    var lineLenght = 4;
-  } else if (adjectivesArray.lenght % 4 === 0) {
+  if (adjectivesArray.length % 5 === 0) {
     var lineLenght = 5;
-  } else if (adjectivesArray.lenght % 3 === 0) {
+  } else if (adjectivesArray.length % 4 === 0) {
+    var lineLenght = 4;
+  } else if (adjectivesArray.length % 3 === 0) {
     var lineLenght = 3;
   } else {
     console.log("error dude");
   }
 var theTable = document.createElement("table");
-var amountOfLines = adjectivesArray.lenght / lineLenght;
+var amountOfLines = adjectivesArray.length / lineLenght;
 // build table per se
 for (var j = 0; j < amountOfLines; j++) {
   var newTr = document.createElement("tr");
@@ -95,16 +94,16 @@ for (var j = 0; j < amountOfLines; j++) {
     newInpt.type = "checkbox";
     var newSpan = document.createElement("span");
     newSpan.class = "checkmark";
-    var k = (j * lineLenght + (i + 1));
-    newSpan.innerHTML = adjetiveList[k];
-    newTd.appendChild(newspan);
+    var k = (j * lineLenght + i);
+    newSpan.innerHTML = adjectivesArray[k];
+    newTd.appendChild(newSpan);
     newTd.appendChild(newInpt);
+    newTr.appendChild(newTd);
   }
-  newTr.appendChild(newTd);
   theTable.appendChild(newTr);
 }
 var tableFrame = document.getElementById("tableCard");
 tableFrame.appendChild(theTable);
 };
 
-createTable();
+createTable(adjectivesArray);
