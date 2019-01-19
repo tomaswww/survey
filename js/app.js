@@ -62,13 +62,14 @@
 
 
 // question6 creating the table for checkboxes
-var adjectivesArray = ["Boring","Busy","Calm","Cheap",
-"Creative","Cutting-edge","Exciting","Expensive",
-"Familiar","Fresh","Impressive","Innovative",
-"Inspiring", "Intimidating","Old","Professional",
-"Trustworthy","Unprofessional","Empowering",
-"Approachable","Disconnected","Friendly",
-"Irrelevant","Patronizing","Stable"];
+var adjectivesArray = ["Boring", "Busy", "Calm", "Cheap",
+  "Creative", "Cutting-edge", "Exciting", "Expensive",
+  "Familiar", "Fresh", "Impressive", "Innovative",
+  "Inspiring", "Intimidating", "Old", "Professional",
+  "Trustworthy", "Unprofessional", "Empowering",
+  "Approachable", "Disconnected", "Friendly",
+  "Irrelevant", "Patronizing", "Stable"
+];
 
 
 function createTable(adjectivesArray) {
@@ -83,27 +84,27 @@ function createTable(adjectivesArray) {
   } else {
     console.log("error dude");
   }
-var theTable = document.createElement("table");
-var amountOfLines = adjectivesArray.length / lineLenght;
-// build table per se
-for (var j = 0; j < amountOfLines; j++) {
-  var newTr = document.createElement("tr");
-  for (var i = 0; i < lineLenght; i++) {
-    var newTd = document.createElement("td");
-    var newInpt = document.createElement("input");
-    newInpt.type = "checkbox";
-    var newSpan = document.createElement("span");
-    newSpan.class = "checkmark";
-    var k = (j * lineLenght + i);
-    newSpan.innerHTML = adjectivesArray[k];
-    newTd.appendChild(newSpan);
-    newTd.appendChild(newInpt);
-    newTr.appendChild(newTd);
+  var theTable = document.createElement("table");
+  var amountOfLines = adjectivesArray.length / lineLenght;
+  // build table per se
+  for (var j = 0; j < amountOfLines; j++) {
+    var newTr = document.createElement("tr");
+    for (var i = 0; i < lineLenght; i++) {
+      var newTd = document.createElement("td");
+      var newInpt = document.createElement("input");
+      newInpt.type = "checkbox";
+      var newSpan = document.createElement("span");
+      newSpan.class = "checkmark";
+      var k = (j * lineLenght + i);
+      newSpan.innerHTML = adjectivesArray[k];
+      newTd.appendChild(newInpt);
+      newTd.appendChild(newSpan);
+      newTr.appendChild(newTd);
+    }
+    theTable.appendChild(newTr);
   }
-  theTable.appendChild(newTr);
-}
-var tableFrame = document.getElementById("tableCard");
-tableFrame.appendChild(theTable);
+  var tableFrame = document.getElementById("tableCard");
+  tableFrame.appendChild(theTable);
 };
 
 createTable(adjectivesArray);
